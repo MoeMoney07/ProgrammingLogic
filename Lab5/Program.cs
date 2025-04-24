@@ -4,16 +4,16 @@ class Program
 {
     static void Main()
     {
-        // Problem 1: Seasons of the Year
+        // Problem 1: 
         string[] seasons = { "Spring", "Summer", "Fall", "Winter" };
         foreach (string season in seasons)
         {
             Console.WriteLine($"Season: {season}");
         }
 
-        Console.WriteLine(); // Separator
+        Console.WriteLine(); // 
 
-        // Problem 2: Days of the Week (1–7)
+        // Problem 2: 
         string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
         Console.Write("Enter a number (1–7): ");
         if (int.TryParse(Console.ReadLine(), out int dayNumber) && dayNumber >= 1 && dayNumber <= 7)
@@ -25,7 +25,7 @@ class Program
             Console.WriteLine("Invalid input. Please enter a number between 1 and 7.");
         }
 
-        Console.WriteLine(); // Separator
+        Console.WriteLine(); // 
 
         // Problem 3: Favorite Books and Authors
         string[] books = { "The Hobbit", "Charlotte’s Web", "1984" };
@@ -35,9 +35,9 @@ class Program
             Console.WriteLine($"Book {i + 1}: {books[i]} by {authors[i]}");
         }
 
-        Console.WriteLine(); // Separator
+        Console.WriteLine(); // 
 
-        // Problem 4: Temperature Tracker
+        // Problem 4: 
         int[] temperatures = { 65, 72, 78, 70, 68 };
         Array.Sort(temperatures);
         Console.Write("Sorted Temperatures: ");
@@ -49,9 +49,9 @@ class Program
         Console.WriteLine($"Highest Temperature: {temperatures[^1]}");
         Console.WriteLine($"Lowest Temperature: {temperatures[0]}");
 
-        Console.WriteLine(); // Separator
+        Console.WriteLine(); // 
 
-        // Problem 5: Reverse Countdown
+        // Problem 5:
         int[] countdown = { 5, 4, 3, 2, 1 };
         Array.Reverse(countdown);
         Console.Write("Countdown: ");
@@ -60,6 +60,6 @@ class Program
             Console.Write($"{countdown[i]} ");
         }
 
-        Console.WriteLine(); // Final newline
+        Console.WriteLine(); //
     }
 }
